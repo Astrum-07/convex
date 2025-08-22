@@ -1,0 +1,77 @@
+@use "./global";
+
+.aksiya_parent {
+    margin: 100px 0;
+  .aksiya_top {
+    @extend .flex;
+  }
+  .aksiya_bottom {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 100px;
+    .box {
+      h3 {
+        font-weight: 500;
+        font-size: 18px;
+        color: #000;
+      }
+      .green{
+        margin-top: 10px;
+      }
+      .ves {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 125%;
+        color: rgb(66, 65, 65);
+      }
+      .opa {
+        font-weight: 400;
+        font-size: 18px;
+        text-decoration: line-through;
+        color: #d6d5d5;
+        margin-top: 40px
+      }
+      .bottom {
+        @extend .flex;
+        p {
+          font-weight: 500;
+          font-size: 24px;
+          color: red;
+        }
+        button {
+          border: 1.5px green;
+          border-radius: 10px;
+          padding: 10px 30px;
+          font-weight: 400;
+          font-size: 15px;
+          text-align: center;
+          color: #fff;
+          background-color: rgb(69, 197, 120);
+        }
+      }
+    }
+  }
+}
+@media(max-width:1373px){
+    .aksiya_parent{
+        .aksiya_bottom{
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+}
+
+@media(max-width:1000px){
+    .aksiya_parent{
+        .aksiya_bottom{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}
+@media(max-width:621px){
+    .aksiya_parent{
+        .aksiya_bottom{
+            grid-template-columns: 1fr;
+        }
+    }
+}
