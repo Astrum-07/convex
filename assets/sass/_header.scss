@@ -271,7 +271,10 @@
       padding: 10px 10px;
       gap: 20px;
       color: #fff;
-      .plar {
+      a{
+        @extend .flex;
+        gap: 20px;
+        .plar {
         text-align: start;
         .oq {
           font-weight: 500;
@@ -294,6 +297,7 @@
           font-size: 16px;
           color: #fff;
         }
+      }
       }
     }
   }

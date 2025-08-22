@@ -40,7 +40,7 @@ img {
   color: rgb(69, 197, 120);
 }
 
-.flex, .footer_parent .footer_top, .footer_parent .footer_bot, .aksiya_parent .aksiya_top, .aksiya_parent .aksiya_bottom .box .bottom, .navbar, .navbar2, .navbar2 .selected, .navbar2 .nav_btn2 button {
+.flex, .footer_parent .footer_top, .footer_parent .footer_bot, .aksiya_parent .aksiya_top, .aksiya_parent .aksiya_bottom .box .bottom, .navbar, .navbar2, .navbar2 .selected, .navbar2 .nav_btn2 button, .navbar2 .nav_btn2 button a {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -243,25 +243,28 @@ img {
   gap: 20px;
   color: #fff;
 }
-.navbar2 .nav_btn2 button .plar {
+.navbar2 .nav_btn2 button a {
+  gap: 20px;
+}
+.navbar2 .nav_btn2 button a .plar {
   text-align: start;
 }
-.navbar2 .nav_btn2 button .plar .oq {
+.navbar2 .nav_btn2 button a .plar .oq {
   font-weight: 500;
   font-size: 16px;
   color: #fff;
 }
-.navbar2 .nav_btn2 button .plar p {
+.navbar2 .nav_btn2 button a .plar p {
   font-weight: 400;
   font-size: 12px;
   color: rgba(255, 255, 255, 0.65);
 }
-.navbar2 .nav_btn2 button .onikki {
+.navbar2 .nav_btn2 button a .onikki {
   border-radius: 10px;
   background: #74d69a;
   padding: 10px 15px;
 }
-.navbar2 .nav_btn2 button .onikki p {
+.navbar2 .nav_btn2 button a .onikki p {
   font-weight: 500;
   font-size: 16px;
   color: #fff;
