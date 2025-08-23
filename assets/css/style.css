@@ -40,7 +40,7 @@ img {
   color: rgb(69, 197, 120);
 }
 
-.flex, .showcase_parent .show_top, .footer_parent .footer_top, .footer_parent .footer_bot, .aksiya_parent .aksiya_top, .aksiya_parent .aksiya_bottom .box .bottom, .navbar, .navbar2, .navbar2 .selected, .navbar2 .nav_btn2 button, .navbar2 .nav_btn2 button a {
+.flex, .korzinka_parent, .korzinka_parent .left .top, .korzinka_parent .left .bot .box, .korzinka_parent .right .right_parent .plar, .korzinka_parent .right .right_parent .hlar, .showcase_parent .show_top, .footer_parent .footer_top, .footer_parent .footer_bot, .aksiya_parent .aksiya_top, .aksiya_parent .aksiya_bottom .box .bottom, .navbar, .navbar2, .navbar2 .selected, .navbar2 .nav_btn2 button, .navbar2 .nav_btn2 button a {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -549,6 +549,181 @@ img {
 @media (max-width: 480px) {
   .showcase_parent .show_bot {
     grid-template-columns: 1fr;
+  }
+}
+.korzinka {
+  margin: 50px 0;
+}
+
+.korzinka_parent .left {
+  width: 67%;
+}
+.korzinka_parent .left .top p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: right;
+  color: #ababab;
+}
+.korzinka_parent .left .bot .box {
+  margin-top: 20px;
+}
+.korzinka_parent .left .bot .box img {
+  width: 10%;
+}
+.korzinka_parent .left .bot .box .hlar h4 {
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
+}
+.korzinka_parent .left .bot .box .hlar p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: left;
+  color: #ababab;
+}
+.korzinka_parent .left .bot .box .hlar h5 {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: black;
+}
+.korzinka_parent .left .bot .box button {
+  padding: 10px 30px;
+  display: flex;
+  gap: 20px;
+  background-color: transparent;
+  border: 1.5px solid rgb(69, 197, 120);
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 20px;
+}
+.korzinka_parent .left .bot .box .x {
+  border: none;
+}
+.korzinka_parent .right {
+  width: 30%;
+}
+.korzinka_parent .right .right_parent {
+  border: 1px solid rgb(180, 177, 177);
+  border-radius: 12px;
+  padding: 15px;
+}
+.korzinka_parent .right .right_parent .btn1 {
+  width: 100%;
+  border: 1.5px solid rgb(69, 197, 120);
+  border-radius: 10px;
+  padding: 15px 33px;
+  background: rgb(69, 197, 120);
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+.korzinka_parent .right .right_parent .btn2 {
+  margin: 20px 0;
+  border: 1.5px solid rgb(69, 197, 120);
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: rgb(69, 197, 120);
+  border-radius: 10px;
+  padding: 15px 33px;
+  width: 100%;
+}
+.korzinka_parent .right .right_parent .red {
+  color: red;
+}
+.korzinka_parent .right .right_parent .plar {
+  margin-top: 10px;
+}
+.korzinka_parent .right .right_parent .hlar {
+  margin-top: 20px;
+}
+.korzinka_parent .right p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  color: #ababab;
+  margin-top: 10px;
+}
+
+@media (max-width: 1184px) {
+  .korzinka_parent {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .korzinka_parent .left {
+    width: 100%;
+  }
+  .korzinka_parent .right {
+    width: 100%;
+  }
+}
+@media (max-width: 731px) {
+  .korzinka_parent .left .bot .box .hlar h4 {
+    font-size: 14px;
+  }
+  .korzinka_parent .left .bot .box .hlar h5 {
+    font-size: 14px;
+  }
+  .korzinka_parent .left .bot .box .hlar p {
+    font-size: 12px;
+  }
+  .korzinka_parent .left .bot .box button {
+    padding: 5px 10px;
+    gap: 5px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 531px) {
+  .korzinka_parent .left .bot .box .hlar h4 {
+    font-size: 12px;
+  }
+  .korzinka_parent .left .bot .box .hlar h5 {
+    font-size: 12px;
+  }
+  .korzinka_parent .left .bot .box .hlar p {
+    font-size: 10px;
+  }
+  .korzinka_parent .left .bot .box button {
+    padding: 5px 10px;
+    gap: 5px;
+    font-size: 8px;
+  }
+}
+@media (max-width: 431px) {
+  .korzinka_parent .left .bot .box .hlar h4 {
+    font-size: 10px;
+  }
+  .korzinka_parent .left .bot .box .hlar h5 {
+    font-size: 10px;
+  }
+  .korzinka_parent .left .bot .box .hlar p {
+    font-size: 8px;
+  }
+  .korzinka_parent .left .bot .box button {
+    padding: 5px 10px;
+    gap: 5px;
+    font-size: 8px;
+  }
+}
+@media (max-width: 371px) {
+  .korzinka_parent .left .bot .box .hlar h4 {
+    font-size: 8px;
+  }
+  .korzinka_parent .left .bot .box .hlar h5 {
+    font-size: 8px;
+  }
+  .korzinka_parent .left .bot .box .hlar p {
+    font-size: 6px;
+  }
+  .korzinka_parent .left .bot .box button {
+    padding: 5px 10px;
+    gap: 5px;
+    font-size: 6px;
   }
 }
 
